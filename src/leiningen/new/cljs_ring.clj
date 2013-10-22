@@ -15,9 +15,9 @@
              [".gitignore" (render ".gitignore" data)]
              ["README.md" (render "README.md" data)]
              ["LICENSE" (render "LICENSE" data)]
-             ["resources/cljs/{{sanitized}}/connect.cljs" (render "resources/cljs/tesselax/connect.cljs" data)]
-             ["resources/cljs/{{sanitized}}/core.cljs" (render "resources/cljs/tesselax/core.cljs" data)]
-             ["resources/public/index.html" (render "resources/public/index.html" data)]
              ["doc/intro.md" (render "doc/intro.md" data)]
-             ["src/{{sanitized}}/core.clj" (render "src/tesselax/core.clj" data)]
+             ["resources/public/index.html" (render "resources/public/index.html" data)]
+             ["src/cljs/{{sanitized}}/connect.cljs" (render "src/cljs/tesselax/connect.cljs" data)]
+             ["src/cljs/{{sanitized}}/core.cljs" (render "src/cljs/tesselax/core.cljs" data)]
+             ["src/clj/{{sanitized}}/core.clj" (render "src/clj/tesselax/core.clj" data)]
              ["test/{{sanitized}}/core_test.clj" (render "test/tesselax/core_test.clj" data)])))

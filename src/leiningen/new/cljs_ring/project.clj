@@ -1,5 +1,5 @@
 (defproject {{name}} "0.0.1"
-  :description "The page routing ring handler for caribou"
+  :description "generic clojurescript project"
   :repositories {"sonatype-oss-public" "https://oss.sonatype.org/content/groups/public/"}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-1909"]
@@ -10,7 +10,7 @@
   :plugins [[lein-ring "0.8.6"]
             [lein-cljsbuild "0.3.3"]]
   :jvm-opts ["-agentlib:jdwp=transport=dt_socket,server=y,suspend=n" "-Xmx2g"]
-  :source-paths ["src"]
+  :source-paths ["src/clj"]
   :resource-paths ["resources/"]
   :min-lein-version "2.0.0"
   :main {{name}}.core
@@ -22,7 +22,7 @@
   :cljsbuild {
     :builds {
       :dev {
-        :source-paths ["resources/cljs"]  
+        :source-paths ["src/cljs"]  
         :compiler {
           :optimizations :whitespace
           :output-to  "resources/public/js/app/{{name}}.js"
